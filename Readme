@@ -1,0 +1,199 @@
+Sistema Inteligente de Predição de Evasão Universitária
+
+Aplicação web com Inteligência Artificial para prever o risco de evasão no ensino superior utilizando Machine Learning e visualização interativa com Streamlit.
+
+
+Estrutura do Projeto
+
+PROJETO_EVASAO
+│
+├── data/
+│   └── dataset.csv
+│
+├── model/
+│   ├── colunas.pkl
+│   └── modelo.pkl
+│
+├── notebooks/
+│   └── experimentos_evasao.ipynb
+│
+├── outputs/
+│   ├── curva_roc.png
+│   ├── importancia_variaveis.png
+│   └── matriz_confusao.png
+│
+├── app.py
+├── train_model.py
+├── requirements.txt
+└── README.md
+
+
+Objetivo
+
+Desenvolver uma aplicação inteligente para:
+
+prever evasão universitária
+identificar estudantes em risco
+exibir métricas do modelo
+mostrar gráficos interativos
+apoiar tomada de decisão acadêmica
+
+
+Dataset
+
+Dataset utilizado:
+
+Predict Students’ Dropout and Academic Success
+
+Variável alvo:
+
+Dropout → evasão
+Graduate → concluinte
+Enrolled → matriculado
+
+Transformação:
+
+Dropout = 1
+Graduate = 0
+Enrolled = 0
+
+
+Modelo de Machine Learning
+
+Algoritmo utilizado:
+
+XGBoost Classifier
+
+Problema:
+
+Classificação Binária
+
+Saída:
+
+0 → Sem evasão
+1 → Evasão
+
+
+Métricas Avaliadas
+
+O sistema calcula:
+
+Accuracy
+Precision
+Recall
+F1-score
+ROC-AUC
+Matriz de Confusão
+
+
+Gráficos Exibidos
+
+A aplicação apresenta:
+
+distribuição das classes
+histograma da idade
+gráfico de dispersão
+matriz de confusão
+curva ROC
+importância das variáveis
+
+
+Instalação
+
+Criar ambiente virtual:
+
+python -m venv .venv
+
+Ativar:
+
+Windows
+
+.venv\Scripts\activate
+
+Instalar dependências:
+
+pip install -r requirements.txt
+
+
+Treinamento do Modelo
+
+Executar:
+
+python train_model.py
+
+Isso gera:
+
+model/modelo.pkl
+model/colunas.pkl
+outputs/*.png
+
+
+Executar a Aplicação
+
+Siga os seguintes passos:
+
+Criar um ambiente virtual python
+$ python -m venv venv
+
+Ative o ambiente virtual python:
+$ venv\Scripts\activate
+
+Instale os requirements:
+$ pip install -r requirements.txt
+
+Ao final, execute o projeto:
+$ streamlit run app.py
+
+
+
+Abrir no navegador:
+
+http://localhost:8501
+
+
+Entrada do Sistema
+
+O usuário informa:
+
+idade
+nota de admissão
+unidades aprovadas
+médias acadêmicas
+bolsa
+situação financeira
+gênero
+
+
+Saída do Sistema
+
+O sistema retorna:
+
+probabilidade de evasão
+classificação de risco
+recomendação pedagógica
+
+
+Classificação de Risco
+
+Probabilidade:
+
+0 — 35% → Baixo risco
+35 — 65% → Médio risco
+65 — 100% → Alto risco
+
+
+Aplicação Acadêmica
+
+Este projeto demonstra:
+
+Machine Learning aplicado à educação
+Predição de evasão universitária
+Desenvolvimento de aplicação web com IA
+Visualização interativa de dados
+Deploy em nuvem (opcional)
+
+
+Projeto Acadêmico
+
+Sistema Inteligente para Predição de Evasão Universitária
+Aplicação de Inteligência Artificial na Educação
