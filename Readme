@@ -1,9 +1,9 @@
-Sistema Inteligente de Predição de Evasão Universitária
+# Sistema Inteligente de Predição de Evasão Universitária
 
 Aplicação web com Inteligência Artificial para prever o risco de evasão no ensino superior utilizando Machine Learning e visualização interativa com Streamlit.
 
 
-Estrutura do Projeto
+## Estrutura do Projeto
 
 PROJETO_EVASAO
 │
@@ -28,7 +28,7 @@ PROJETO_EVASAO
 └── README.md
 
 
-Objetivo
+## Objetivo
 
 Desenvolver uma aplicação inteligente para:
 
@@ -58,7 +58,7 @@ Graduate = 0
 Enrolled = 0
 
 
-Modelo de Machine Learning
+## Modelo de Machine Learning
 
 Algoritmo utilizado:
 
@@ -74,7 +74,7 @@ Saída:
 1 → Evasão
 
 
-Métricas Avaliadas
+## Métricas Avaliadas
 
 O sistema calcula:
 
@@ -86,7 +86,7 @@ ROC-AUC
 Matriz de Confusão
 
 
-Gráficos Exibidos
+## Gráficos Exibidos
 
 A aplicação apresenta:
 
@@ -98,7 +98,7 @@ curva ROC
 importância das variáveis
 
 
-Instalação
+## Instalação
 
 Criar ambiente virtual:
 
@@ -115,7 +115,7 @@ Instalar dependências:
 pip install -r requirements.txt
 
 
-Treinamento do Modelo
+## Treinamento do Modelo
 
 Executar:
 
@@ -128,7 +128,7 @@ model/colunas.pkl
 outputs/*.png
 
 
-Executar a Aplicação
+## Executar a Aplicação
 
 Siga os seguintes passos:
 
@@ -145,13 +145,12 @@ Ao final, execute o projeto:
 $ streamlit run app.py
 
 
-
 Abrir no navegador:
 
 http://localhost:8501
 
 
-Entrada do Sistema
+## Entrada do Sistema
 
 O usuário informa:
 
@@ -173,7 +172,7 @@ classificação de risco
 recomendação pedagógica
 
 
-Classificação de Risco
+## Classificação de Risco
 
 Probabilidade:
 
@@ -182,7 +181,7 @@ Probabilidade:
 65 — 100% → Alto risco
 
 
-Aplicação Acadêmica
+##Aplicação Acadêmica
 
 Este projeto demonstra:
 
@@ -190,10 +189,5 @@ Machine Learning aplicado à educação
 Predição de evasão universitária
 Desenvolvimento de aplicação web com IA
 Visualização interativa de dados
-Deploy em nuvem (opcional)
 
 
-Projeto Acadêmico
-
-Sistema Inteligente para Predição de Evasão Universitária
-Aplicação de Inteligência Artificial na Educação
